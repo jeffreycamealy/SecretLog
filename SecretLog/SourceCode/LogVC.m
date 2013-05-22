@@ -53,6 +53,10 @@
         self.textView.editable = NO;
         firstOpen = NO;
     }
+    
+    NSLog(@"alkdfjlaskjflaksjflkajslkfjaslkjflkadjsf");
+    fprintf(stderr, "Fatal Error #2212. We're hosed");
+    printf("some other stuff");
 }
 
 

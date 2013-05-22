@@ -50,6 +50,7 @@
 #pragma mark - Private API
 
 - (void)redirectSTDERR {
+    if(isatty(STDERR_FILENO)) return;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *log = [paths[0] stringByAppendingPathComponent:@"ns.log"];
     [NSFileManager.defaultManager removeItemAtPath:log error:nil]; // delete existing file

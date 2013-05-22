@@ -14,14 +14,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupMainWindow];
     self.window.rootViewController = UIViewController.new;
-//    self.window.rootViewController = LogVC.new;
-//    
-//    UILongPressGestureRecognizer *recognizer = [UILongPressGestureRecognizer.alloc initWithTarget:self.window.rootViewController
-//                                                                                           action:@selector(longPressed)];
-//    recognizer.minimumPressDuration = 2;
-//    recognizer.numberOfTouchesRequired = 3;
-//    [self.window addGestureRecognizer:recognizer];
-    
     
     return YES;
 }
@@ -31,13 +23,5 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 }
-
-
-#pragma mark - Action Method
-
-- (void)longPressed {
-    [self.window.rootViewController presentViewController:LogVC.new animated:YES completion:nil];
-}
-
 
 @end
