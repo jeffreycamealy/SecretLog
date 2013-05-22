@@ -22,5 +22,5 @@ int main(int argc, char *argv[]) {
 - If you launch while not connected, logging will display in `SecretLog`
 
 ## Caveat
-`SecretLog` requires the following property on your AppDelegate:  
+The following property is required on your AppDelegate:  
 `@property (strong, nonatomic) UIWindow *window;`
