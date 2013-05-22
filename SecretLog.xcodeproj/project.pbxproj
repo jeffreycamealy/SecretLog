@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A19B9A174C67340042B4ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B99174C67340042B4ED /* UIKit.framework */; };
+		00A19B9C174C67340042B4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B9B174C67340042B4ED /* Foundation.framework */; };
+		00A19B9E174C67340042B4ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B9D174C67340042B4ED /* CoreGraphics.framework */; };
+		00A19BA4174C67340042B4ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BA2174C67340042B4ED /* InfoPlist.strings */; };
+		00A19BA6174C67340042B4ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BA5174C67340042B4ED /* main.m */; };
+		00A19BAA174C67340042B4ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BA9174C67340042B4ED /* AppDelegate.m */; };
+		00A19BAC174C67340042B4ED /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BAB174C67340042B4ED /* Default.png */; };
+		00A19BAE174C67340042B4ED /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BAD174C67340042B4ED /* Default@2x.png */; };
+		00A19BB0174C67340042B4ED /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BAF174C67340042B4ED /* Default-568h@2x.png */; };
+		00A19BB8174C67340042B4ED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19BB7174C67340042B4ED /* SenTestingKit.framework */; };
+		00A19BB9174C67340042B4ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B99174C67340042B4ED /* UIKit.framework */; };
+		00A19BBA174C67340042B4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B9B174C67340042B4ED /* Foundation.framework */; };
+		00A19BC2174C67340042B4ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BC0174C67340042B4ED /* InfoPlist.strings */; };
+		00A19BC5174C67340042B4ED /* SecretLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BC4174C67340042B4ED /* SecretLogTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00A19BBB174C67340042B4ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00A19B8E174C67340042B4ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A19B95174C67340042B4ED;
+			remoteInfo = SecretLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A19B96174C67340042B4ED /* SecretLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A19B99174C67340042B4ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00A19B9B174C67340042B4ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00A19B9D174C67340042B4ED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00A19BA1174C67340042B4ED /* SecretLog-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecretLog-Info.plist"; sourceTree = "<group>"; };
+		00A19BA3174C67340042B4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00A19BA5174C67340042B4ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00A19BA7174C67340042B4ED /* SecretLog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecretLog-Prefix.pch"; sourceTree = "<group>"; };
+		00A19BA8174C67340042B4ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00A19BA9174C67340042B4ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00A19BAB174C67340042B4ED /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		00A19BAD174C67340042B4ED /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		00A19BAF174C67340042B4ED /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		00A19BB6174C67340042B4ED /* SecretLogTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecretLogTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A19BB7174C67340042B4ED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		00A19BBF174C67340042B4ED /* SecretLogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecretLogTests-Info.plist"; sourceTree = "<group>"; };
+		00A19BC1174C67340042B4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00A19BC3174C67340042B4ED /* SecretLogTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretLogTests.h; sourceTree = "<group>"; };
+		00A19BC4174C67340042B4ED /* SecretLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretLogTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00A19B93174C67340042B4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A19B9A174C67340042B4ED /* UIKit.framework in Frameworks */,
+				00A19B9C174C67340042B4ED /* Foundation.framework in Frameworks */,
+				00A19B9E174C67340042B4ED /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A19BB2174C67340042B4ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A19BB8174C67340042B4ED /* SenTestingKit.framework in Frameworks */,
+				00A19BB9174C67340042B4ED /* UIKit.framework in Frameworks */,
+				00A19BBA174C67340042B4ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00A19B8D174C67340042B4ED = {
+			isa = PBXGroup;
+			children = (
+				00A19B9F174C67340042B4ED /* SecretLog */,
+				00A19BBD174C67340042B4ED /* SecretLogTests */,
+				00A19B98174C67340042B4ED /* Frameworks */,
+				00A19B97174C67340042B4ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00A19B97174C67340042B4ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00A19B96174C67340042B4ED /* SecretLog.app */,
+				00A19BB6174C67340042B4ED /* SecretLogTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00A19B98174C67340042B4ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00A19B99174C67340042B4ED /* UIKit.framework */,
+				00A19B9B174C67340042B4ED /* Foundation.framework */,
+				00A19B9D174C67340042B4ED /* CoreGraphics.framework */,
+				00A19BB7174C67340042B4ED /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00A19B9F174C67340042B4ED /* SecretLog */ = {
+			isa = PBXGroup;
+			children = (
+				00A19BA8174C67340042B4ED /* AppDelegate.h */,
+				00A19BA9174C67340042B4ED /* AppDelegate.m */,
+				00A19BA0174C67340042B4ED /* Supporting Files */,
+			);
+			path = SecretLog;
+			sourceTree = "<group>";
+		};
+		00A19BA0174C67340042B4ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00A19BA1174C67340042B4ED /* SecretLog-Info.plist */,
+				00A19BA2174C67340042B4ED /* InfoPlist.strings */,
+				00A19BA5174C67340042B4ED /* main.m */,
+				00A19BA7174C67340042B4ED /* SecretLog-Prefix.pch */,
+				00A19BAB174C67340042B4ED /* Default.png */,
+				00A19BAD174C67340042B4ED /* Default@2x.png */,
+				00A19BAF174C67340042B4ED /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00A19BBD174C67340042B4ED /* SecretLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				00A19BC3174C67340042B4ED /* SecretLogTests.h */,
+				00A19BC4174C67340042B4ED /* SecretLogTests.m */,
+				00A19BBE174C67340042B4ED /* Supporting Files */,
+			);
+			path = SecretLogTests;
+			sourceTree = "<group>";
+		};
+		00A19BBE174C67340042B4ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00A19BBF174C67340042B4ED /* SecretLogTests-Info.plist */,
+				00A19BC0174C67340042B4ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00A19B95174C67340042B4ED /* SecretLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A19BC8174C67340042B4ED /* Build configuration list for PBXNativeTarget "SecretLog" */;
+			buildPhases = (
+				00A19B92174C67340042B4ED /* Sources */,
+				00A19B93174C67340042B4ED /* Frameworks */,
+				00A19B94174C67340042B4ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecretLog;
+			productName = SecretLog;
+			productReference = 00A19B96174C67340042B4ED /* SecretLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00A19BB5174C67340042B4ED /* SecretLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A19BCB174C67340042B4ED /* Build configuration list for PBXNativeTarget "SecretLogTests" */;
+			buildPhases = (
+				00A19BB1174C67340042B4ED /* Sources */,
+				00A19BB2174C67340042B4ED /* Frameworks */,
+				00A19BB3174C67340042B4ED /* Resources */,
+				00A19BB4174C67340042B4ED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A19BBC174C67340042B4ED /* PBXTargetDependency */,
+			);
+			name = SecretLogTests;
+			productName = SecretLogTests;
+			productReference = 00A19BB6174C67340042B4ED /* SecretLogTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00A19B8E174C67340042B4ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = bearMountain;
+			};
+			buildConfigurationList = 00A19B91174C67340042B4ED /* Build configuration list for PBXProject "SecretLog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00A19B8D174C67340042B4ED;
+			productRefGroup = 00A19B97174C67340042B4ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00A19B95174C67340042B4ED /* SecretLog */,
+				00A19BB5174C67340042B4ED /* SecretLogTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00A19B94174C67340042B4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A19BA4174C67340042B4ED /* InfoPlist.strings in Resources */,
+				00A19BAC174C67340042B4ED /* Default.png in Resources */,
+				00A19BAE174C67340042B4ED /* Default@2x.png in Resources */,
+				00A19BB0174C67340042B4ED /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A19BB3174C67340042B4ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A19BC2174C67340042B4ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A19BB4174C67340042B4ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00A19B92174C67340042B4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A19BA6174C67340042B4ED /* main.m in Sources */,
+				00A19BAA174C67340042B4ED /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00A19BB1174C67340042B4ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A19BC5174C67340042B4ED /* SecretLogTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00A19BBC174C67340042B4ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A19B95174C67340042B4ED /* SecretLog */;
+			targetProxy = 00A19BBB174C67340042B4ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00A19BA2174C67340042B4ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A19BA3174C67340042B4ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00A19BC0174C67340042B4ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00A19BC1174C67340042B4ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00A19BC6174C67340042B4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00A19BC7174C67340042B4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00A19BC9174C67340042B4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecretLog/SecretLog-Prefix.pch";
+				INFOPLIST_FILE = "SecretLog/SecretLog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00A19BCA174C67340042B4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecretLog/SecretLog-Prefix.pch";
+				INFOPLIST_FILE = "SecretLog/SecretLog-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		00A19BCC174C67340042B4ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecretLog.app/SecretLog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecretLog/SecretLog-Prefix.pch";
+				INFOPLIST_FILE = "SecretLogTests/SecretLogTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		00A19BCD174C67340042B4ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecretLog.app/SecretLog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecretLog/SecretLog-Prefix.pch";
+				INFOPLIST_FILE = "SecretLogTests/SecretLogTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00A19B91174C67340042B4ED /* Build configuration list for PBXProject "SecretLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A19BC6174C67340042B4ED /* Debug */,
+				00A19BC7174C67340042B4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00A19BC8174C67340042B4ED /* Build configuration list for PBXNativeTarget "SecretLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A19BC9174C67340042B4ED /* Debug */,
+				00A19BCA174C67340042B4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00A19BCB174C67340042B4ED /* Build configuration list for PBXNativeTarget "SecretLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A19BCC174C67340042B4ED /* Debug */,
+				00A19BCD174C67340042B4ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00A19B8E174C67340042B4ED /* Project object */;
+}
