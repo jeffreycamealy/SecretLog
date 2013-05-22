@@ -21,6 +21,9 @@
 		00A19BBA174C67340042B4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B9B174C67340042B4ED /* Foundation.framework */; };
 		00A19BC2174C67340042B4ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BC0174C67340042B4ED /* InfoPlist.strings */; };
 		00A19BC5174C67340042B4ED /* SecretLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BC4174C67340042B4ED /* SecretLogTests.m */; };
+		00A19BD3174C68020042B4ED /* LogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BD1174C68020042B4ED /* LogVC.m */; };
+		00A19BD4174C68020042B4ED /* LogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BD2174C68020042B4ED /* LogVC.xib */; };
+		00A19BD7174C7CB80042B4ED /* BMSecretLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BD6174C7CB80042B4ED /* BMSecretLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		00A19BC1174C67340042B4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00A19BC3174C67340042B4ED /* SecretLogTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretLogTests.h; sourceTree = "<group>"; };
 		00A19BC4174C67340042B4ED /* SecretLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretLogTests.m; sourceTree = "<group>"; };
+		00A19BD0174C68020042B4ED /* LogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogVC.h; path = SourceCode/LogVC.h; sourceTree = "<group>"; };
+		00A19BD1174C68020042B4ED /* LogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogVC.m; path = SourceCode/LogVC.m; sourceTree = "<group>"; };
+		00A19BD2174C68020042B4ED /* LogVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LogVC.xib; path = SourceCode/LogVC.xib; sourceTree = "<group>"; };
+		00A19BD5174C7CB80042B4ED /* BMSecretLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMSecretLog.h; path = SourceCode/BMSecretLog.h; sourceTree = "<group>"; };
+		00A19BD6174C7CB80042B4ED /* BMSecretLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMSecretLog.m; path = SourceCode/BMSecretLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +120,10 @@
 		00A19B9F174C67340042B4ED /* SecretLog */ = {
 			isa = PBXGroup;
 			children = (
-				00A19BA8174C67340042B4ED /* AppDelegate.h */,
-				00A19BA9174C67340042B4ED /* AppDelegate.m */,
+				00A19BCE174C67F00042B4ED /* AppDelegate */,
+				00A19BCF174C67F70042B4ED /* LogVC */,
 				00A19BA0174C67340042B4ED /* Supporting Files */,
+				00A19BD8174C7CBF0042B4ED /* BMSecretLog */,
 			);
 			path = SecretLog;
 			sourceTree = "<group>";
@@ -150,6 +159,34 @@
 				00A19BC0174C67340042B4ED /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00A19BCE174C67F00042B4ED /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				00A19BA8174C67340042B4ED /* AppDelegate.h */,
+				00A19BA9174C67340042B4ED /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		00A19BCF174C67F70042B4ED /* LogVC */ = {
+			isa = PBXGroup;
+			children = (
+				00A19BD0174C68020042B4ED /* LogVC.h */,
+				00A19BD1174C68020042B4ED /* LogVC.m */,
+				00A19BD2174C68020042B4ED /* LogVC.xib */,
+			);
+			name = LogVC;
+			sourceTree = "<group>";
+		};
+		00A19BD8174C7CBF0042B4ED /* BMSecretLog */ = {
+			isa = PBXGroup;
+			children = (
+				00A19BD5174C7CB80042B4ED /* BMSecretLog.h */,
+				00A19BD6174C7CB80042B4ED /* BMSecretLog.m */,
+			);
+			name = BMSecretLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +264,7 @@
 				00A19BAC174C67340042B4ED /* Default.png in Resources */,
 				00A19BAE174C67340042B4ED /* Default@2x.png in Resources */,
 				00A19BB0174C67340042B4ED /* Default-568h@2x.png in Resources */,
+				00A19BD4174C68020042B4ED /* LogVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +301,8 @@
 			files = (
 				00A19BA6174C67340042B4ED /* main.m in Sources */,
 				00A19BAA174C67340042B4ED /* AppDelegate.m in Sources */,
+				00A19BD3174C68020042B4ED /* LogVC.m in Sources */,
+				00A19BD7174C7CB80042B4ED /* BMSecretLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +369,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -353,7 +393,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

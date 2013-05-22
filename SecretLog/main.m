@@ -7,12 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "AppDelegate.h"
 
-int main(int argc, char *argv[])
-{
+
+void redirectSTDERR () {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *log = [paths[0] stringByAppendingPathComponent:@"ns.log"];
+    [NSFileManager.defaultManager removeItemAtPath:log error:nil]; // delete existing file
+    freopen([log fileSystemRepresentation], "a", stderr);
+}
+
+int main(int argc, char *argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        redirectSTDERR();
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass(AppDelegate.class));
     }
 }
