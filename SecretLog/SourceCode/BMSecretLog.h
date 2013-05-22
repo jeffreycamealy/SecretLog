@@ -9,6 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface BMSecretLog : NSObject
-
-
++ (void)go;
 @end

@@ -13,13 +13,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupMainWindow];
-    self.window.rootViewController = LogVC.new;
-    
-    UILongPressGestureRecognizer *recognizer = [UILongPressGestureRecognizer.alloc initWithTarget:self.window.rootViewController
-                                                                                           action:@selector(longPressed)];
-    recognizer.minimumPressDuration = 2;
-    recognizer.numberOfTouchesRequired = 3;
-    [self.window addGestureRecognizer:recognizer];
+    self.window.rootViewController = UIViewController.new;
+//    self.window.rootViewController = LogVC.new;
+//    
+//    UILongPressGestureRecognizer *recognizer = [UILongPressGestureRecognizer.alloc initWithTarget:self.window.rootViewController
+//                                                                                           action:@selector(longPressed)];
+//    recognizer.minimumPressDuration = 2;
+//    recognizer.numberOfTouchesRequired = 3;
+//    [self.window addGestureRecognizer:recognizer];
     
     
     return YES;

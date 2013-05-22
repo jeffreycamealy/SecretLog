@@ -28,7 +28,13 @@
 
 - (id)init {
     if (self = [super init]) {
-        [self addGestureRecognierToMainWindow];
+        [self redirectSTDERR];
+        
+        double delayInSeconds = 0.5;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [self addGestureRecognierToMainWindow];
+        });
     }
     return self;
 }
@@ -43,12 +49,19 @@
 
 #pragma mark - Private API
 
+- (void)redirectSTDERR {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *log = [paths[0] stringByAppendingPathComponent:@"ns.log"];
+    [NSFileManager.defaultManager removeItemAtPath:log error:nil]; // delete existing file
+    freopen([log fileSystemRepresentation], "a", stderr);
+}
+
 - (UIWindow *)mainWindow {
     return [UIApplication.sharedApplication.delegate window];
 }
 
 - (void)addGestureRecognierToMainWindow {
-    UILongPressGestureRecognizer *recognizer = [UILongPressGestureRecognizer.alloc initWithTarget:self.mainWindow.rootViewController
+    UILongPressGestureRecognizer *recognizer = [UILongPressGestureRecognizer.alloc initWithTarget:self
                                                                                            action:@selector(successfulLongPress)];
     recognizer.minimumPressDuration = 2;
     recognizer.numberOfTouchesRequired = 3;
