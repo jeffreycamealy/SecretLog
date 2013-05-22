@@ -1,19 +1,26 @@
-Allows your app to access the debug console when not plugged into a computer.
+# SecretLog
 
-To use, simply add to your `main.m` file.
+Allows your app to access the debug console for your iOS App when not plugged into a computer.
+
+## Getting Started
+Simply add `SecretLog` to your `main.m` file.
 
 ```objc
-#import "BMSecretLog.h"
+#import "BMSecretLog.h" // <-- Include
 
 int main(int argc, char *argv[]) {
 	@autoreleasepool {
-		[BMSecretLog go];
+		[BMSecretLog go]; // <-- Kickoff
 		return UIApplicationMain(argc, argv, nil, NSStringFromClass(AppDelegate.class));
 	}
 }
 ```
 
-`SecretLog` will display modally - triggered by a 3 second long press on any screen.  
-Logging will print to standard debug console if phone is connected to Xcode, or to `SecretLog` if not.  
+## Usage
+- Perform a 3 finger, 3 second long press on any screen to display your `SecretLog`  
+- If you launch while connected to Xcode, logging will display as normal in the console
+- If you launch while not connected, logging will display in `SecretLog`
 
-**Note:** `SecretLog` requires a public `window` property on your AppDelegate.
+## Caveat
+`SecretLog` requires the following property on your AppDelegate:  
+`@property (strong, nonatomic) UIWindow *window;`
