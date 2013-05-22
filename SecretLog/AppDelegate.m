@@ -7,14 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import "LogVC.h"
+#import "BMSecretLog.h"
+#import "DummyVC.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupMainWindow];
-    self.window.rootViewController = UIViewController.new;
-    
+    self.window.rootViewController = DummyVC.new;
+    [BMSecretLog go];
     return YES;
 }
 

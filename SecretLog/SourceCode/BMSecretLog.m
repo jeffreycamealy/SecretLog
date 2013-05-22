@@ -9,6 +9,11 @@
 #import "BMSecretLog.h"
 #import "LogVC.h"
 
+@interface BMSecretLog () {
+    LogVC *logVC;
+}
+@end
+
 
 @implementation BMSecretLog
 
@@ -65,12 +70,18 @@
     UILongPressGestureRecognizer *recognizer = [UILongPressGestureRecognizer.alloc initWithTarget:self
                                                                                            action:@selector(successfulLongPress)];
     recognizer.minimumPressDuration = 2;
-    recognizer.numberOfTouchesRequired = 3;
+    recognizer.numberOfTouchesRequired = 2;
     [self.mainWindow addGestureRecognizer:recognizer];
 }
 
 - (void)successfulLongPress {
-    [self.mainWindow.rootViewController presentViewController:LogVC.new animated:YES completion:nil];
+    logVC = LogVC.new;
+    if(!UIApplication.sharedApplication.statusBarHidden) {
+        float statusBarHeight = 20;
+        logVC.view.frame = CGRectMake(0, statusBarHeight,
+                                      logVC.view.frame.size.width, logVC.view.frame.size.height-statusBarHeight);
+    }
+    [self.mainWindow addSubview:logVC.view];
 }
 
 
