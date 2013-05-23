@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "BMSecretLog.h"
 
 
 int main(int argc, char *argv[]) {
     @autoreleasepool {
-//        [BMSecretLog go];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass(AppDelegate.class));
     }
 }

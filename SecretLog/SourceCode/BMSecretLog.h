@@ -14,13 +14,11 @@
  * Adds SecretLogging to your app.
  *
  * Usage:
- *  // Add to your 'main.m' like this
- *  int main(int argc, char *argv[]) {
- *      @autoreleasepool {
- *          [BMSecretLog go];
- *          return UIApplicationMain(argc, argv, nil, NSStringFromClass(AppDelegate.class));
- *      }
- *  }
+ *  // Just call it once 
+ *  // (such as in you applicationDidFinishLaunching)
+ *  
+ *  [BMSecretLog go];
+ *
  *
  * Triggered by a 3 second long press on any screen.
  * Will print to standard debug console if phone is 
@@ -31,4 +29,5 @@
  *
  */
 + (void)go;
+
 @end

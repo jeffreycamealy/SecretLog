@@ -8,9 +8,12 @@
 
 #import "BMSecretLog.h"
 #import "LogVC.h"
+#import "LogVCDelegate.h"
 
-@interface BMSecretLog () {
-    LogVC *logVC;
+@interface BMSecretLog () <LogVCDelegate> {
+    BOOL secretLogIsShowing;
+    UIWindow *mainWindow;
+    UIWindow *logWindow;
 }
 @end
 
@@ -34,12 +37,7 @@
 - (id)init {
     if (self = [super init]) {
         [self redirectSTDERR];
-        
-        double delayInSeconds = 0.5;
-        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-            [self addGestureRecognierToMainWindow];
-        });
+        [self addGestureRecognierToMainWindow];
     }
     return self;
 }
@@ -55,35 +53,48 @@
 #pragma mark - Private API
 
 - (void)redirectSTDERR {
-    if(isatty(STDERR_FILENO)) return;
+    if(self.deviceIsConnectedToComputer) return;
+    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *log = [paths[0] stringByAppendingPathComponent:@"ns.log"];
     [NSFileManager.defaultManager removeItemAtPath:log error:nil]; // delete existing file
     freopen([log fileSystemRepresentation], "a", stderr);
 }
 
-- (UIWindow *)mainWindow {
-    return [UIApplication.sharedApplication.delegate window];
+- (BOOL)deviceIsConnectedToComputer {
+    return isatty(STDERR_FILENO);
 }
 
 - (void)addGestureRecognierToMainWindow {
+    mainWindow = UIApplication.sharedApplication.windows.lastObject;
     UILongPressGestureRecognizer *recognizer = [UILongPressGestureRecognizer.alloc initWithTarget:self
                                                                                            action:@selector(successfulLongPress)];
     recognizer.minimumPressDuration = 2;
-    recognizer.numberOfTouchesRequired = 2;
-    [self.mainWindow addGestureRecognizer:recognizer];
+    recognizer.numberOfTouchesRequired = 3;
+    [mainWindow addGestureRecognizer:recognizer];
 }
 
 - (void)successfulLongPress {
-    logVC = LogVC.new;
-    if(!UIApplication.sharedApplication.statusBarHidden) {
-        float statusBarHeight = 20;
-        logVC.view.frame = CGRectMake(0, statusBarHeight,
-                                      logVC.view.frame.size.width, logVC.view.frame.size.height-statusBarHeight);
-    }
-    [self.mainWindow addSubview:logVC.view];
+    if (secretLogIsShowing) return;
+    
+    secretLogIsShowing = YES;
+    
+    logWindow = [UIWindow.alloc initWithFrame:UIScreen.mainScreen.bounds];
+    [logWindow makeKeyAndVisible];
+    
+    LogVC *aLogVC = LogVC.new;
+    aLogVC.delegate = self;
+    logWindow.rootViewController = aLogVC;
 }
 
+
+#pragma mark - LogVC Delegate Method
+
+- (void)logVCIsReadyToDismiss {
+    [mainWindow makeKeyAndVisible];
+    logWindow = nil;
+    secretLogIsShowing = NO;
+}
 
 @end
 

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LogVCDelegate.h"
 
 @interface LogVC : UIViewController
 - (IBAction)doneButtonPressed:(UIBarButtonItem *)sender;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak) id<LogVCDelegate> delegate;
 
 @end

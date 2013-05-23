@@ -42,6 +42,7 @@
 		004A26E3174D8647006BDB90 /* DummyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummyVC.h; path = SourceCode/DummyVC.h; sourceTree = "<group>"; };
 		004A26E4174D8647006BDB90 /* DummyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DummyVC.m; path = SourceCode/DummyVC.m; sourceTree = "<group>"; };
 		004A26E5174D8647006BDB90 /* DummyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DummyVC.xib; path = SourceCode/DummyVC.xib; sourceTree = "<group>"; };
+		004A26E9174E6EE2006BDB90 /* LogVCDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LogVCDelegate.h; path = SourceCode/LogVCDelegate.h; sourceTree = "<group>"; };
 		00A19B96174C67340042B4ED /* SecretLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A19B99174C67340042B4ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00A19B9B174C67340042B4ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -189,6 +190,7 @@
 		00A19BCF174C67F70042B4ED /* LogVC */ = {
 			isa = PBXGroup;
 			children = (
+				004A26E9174E6EE2006BDB90 /* LogVCDelegate.h */,
 				00A19BD0174C68020042B4ED /* LogVC.h */,
 				00A19BD1174C68020042B4ED /* LogVC.m */,
 				00A19BD2174C68020042B4ED /* LogVC.xib */,
