@@ -4,6 +4,8 @@ Allows you to access the debug console for your iOS App when not plugged into a 
 
 ## Getting Started
 
+Add `SecretLog` folder to your project.
+
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [BMSecretLog go];
