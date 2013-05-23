@@ -15,6 +15,6 @@ Add `SecretLog` folder to your project.
 
 ## Usage
 1. Perform a 3 finger, 3 second long press on any screen to display your `SecretLog`  
-- If you launch while your device is connected to Xcode, logging will display as normal in the console
+- If you launch while your device is connected to Xcode, logging will display as normal in the console (`SecretLog` will not appear on a 3 finger long press)
 - If you launch while not connected, logging will display in `SecretLog`
 
