@@ -46,22 +46,26 @@
 #pragma mark - Public API
 
 + (void)go {
-    [BMSecretLog sharedInstance];
+    if(self.deviceIsConnectedToComputer) return;
+    
+    double delayInSeconds = 0.1; // Wait until AppDelegate's window is configured
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [BMSecretLog sharedInstance];
+    });
 }
 
 
 #pragma mark - Private API
 
 - (void)redirectSTDERR {
-    if(self.deviceIsConnectedToComputer) return;
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *log = [paths[0] stringByAppendingPathComponent:@"ns.log"];
     [NSFileManager.defaultManager removeItemAtPath:log error:nil]; // delete existing file
     freopen([log fileSystemRepresentation], "a", stderr);
 }
 
-- (BOOL)deviceIsConnectedToComputer {
++ (BOOL)deviceIsConnectedToComputer {
     return isatty(STDERR_FILENO);
 }
 
@@ -78,6 +82,8 @@
     if (secretLogIsShowing) return;
     
     secretLogIsShowing = YES;
+    
+    [mainWindow endEditing:YES];
     
     logWindow = [UIWindow.alloc initWithFrame:UIScreen.mainScreen.bounds];
     [logWindow makeKeyAndVisible];
