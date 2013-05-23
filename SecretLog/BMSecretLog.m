@@ -7,10 +7,10 @@
 //
 
 #import "BMSecretLog.h"
-#import "LogVC.h"
-#import "LogVCDelegate.h"
+#import "BMLogVC.h"
+#import "BMLogVCDelegate.h"
 
-@interface BMSecretLog () <LogVCDelegate> {
+@interface BMSecretLog () <BMLogVCDelegate> {
     BOOL secretLogIsShowing;
     UIWindow *mainWindow;
     UIWindow *logWindow;
@@ -82,9 +82,9 @@
     logWindow = [UIWindow.alloc initWithFrame:UIScreen.mainScreen.bounds];
     [logWindow makeKeyAndVisible];
     
-    LogVC *aLogVC = LogVC.new;
-    aLogVC.delegate = self;
-    logWindow.rootViewController = aLogVC;
+    BMLogVC *logVC = BMLogVC.new;
+    logVC.delegate = self;
+    logWindow.rootViewController = logVC;
 }
 
 

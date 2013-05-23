@@ -1,5 +1,5 @@
 //
-//  LogVC.h
+//  BMLogVC.h
 //  Console
 //
 //  Created by Jeffrey Camealy on 5/7/13.
@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LogVCDelegate.h"
+#import "BMLogVCDelegate.h"
 
-@interface LogVC : UIViewController
+@interface BMLogVC : UIViewController
 - (IBAction)doneButtonPressed:(UIBarButtonItem *)sender;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (weak) id<LogVCDelegate> delegate;
+@property (weak) id<BMLogVCDelegate> delegate;
 
 @end

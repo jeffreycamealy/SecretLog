@@ -1,20 +1,20 @@
 //
-//  LogVC.m
+//  BMLogVC.m
 //  Console
 //
 //  Created by Jeffrey Camealy on 5/7/13.
 //  Copyright (c) 2013 Ora Interactive. All rights reserved.
 //
 
-#import "LogVC.h"
+#import "BMLogVC.h"
 
-@interface LogVC () {
+@interface BMLogVC () {
     BOOL firstOpen;
 }
 @end
 
 
-@implementation LogVC
+@implementation BMLogVC
 
 #pragma mark - Init
 

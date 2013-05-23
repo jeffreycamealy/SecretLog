@@ -15,8 +15,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setupMainWindow];
     self.window.rootViewController = DummyVC.new;
-    [self.window.rootViewController presentViewController:DummyVC.new animated:YES completion:nil];
     [BMSecretLog go];
+    
     return YES;
 }
 

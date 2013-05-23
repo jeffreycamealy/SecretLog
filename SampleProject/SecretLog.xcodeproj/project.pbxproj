@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		004A26E6174D8647006BDB90 /* DummyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 004A26E4174D8647006BDB90 /* DummyVC.m */; };
 		004A26E7174D8647006BDB90 /* DummyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004A26E5174D8647006BDB90 /* DummyVC.xib */; };
+		004A26EE174E73DD006BDB90 /* BMLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 004A26EB174E73DD006BDB90 /* BMLogVC.m */; };
+		004A26EF174E73DD006BDB90 /* BMLogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 004A26EC174E73DD006BDB90 /* BMLogVC.xib */; };
+		004A26F2174E73ED006BDB90 /* BMSecretLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 004A26F1174E73ED006BDB90 /* BMSecretLog.m */; };
 		00A19B9A174C67340042B4ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B99174C67340042B4ED /* UIKit.framework */; };
 		00A19B9C174C67340042B4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B9B174C67340042B4ED /* Foundation.framework */; };
 		00A19B9E174C67340042B4ED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B9D174C67340042B4ED /* CoreGraphics.framework */; };
@@ -23,9 +26,6 @@
 		00A19BBA174C67340042B4ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A19B9B174C67340042B4ED /* Foundation.framework */; };
 		00A19BC2174C67340042B4ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BC0174C67340042B4ED /* InfoPlist.strings */; };
 		00A19BC5174C67340042B4ED /* SecretLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BC4174C67340042B4ED /* SecretLogTests.m */; };
-		00A19BD3174C68020042B4ED /* LogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BD1174C68020042B4ED /* LogVC.m */; };
-		00A19BD4174C68020042B4ED /* LogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A19BD2174C68020042B4ED /* LogVC.xib */; };
-		00A19BD7174C7CB80042B4ED /* BMSecretLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19BD6174C7CB80042B4ED /* BMSecretLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,12 @@
 		004A26E3174D8647006BDB90 /* DummyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummyVC.h; path = SourceCode/DummyVC.h; sourceTree = "<group>"; };
 		004A26E4174D8647006BDB90 /* DummyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DummyVC.m; path = SourceCode/DummyVC.m; sourceTree = "<group>"; };
 		004A26E5174D8647006BDB90 /* DummyVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DummyVC.xib; path = SourceCode/DummyVC.xib; sourceTree = "<group>"; };
-		004A26E9174E6EE2006BDB90 /* LogVCDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LogVCDelegate.h; path = SourceCode/LogVCDelegate.h; sourceTree = "<group>"; };
+		004A26EA174E73DD006BDB90 /* BMLogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMLogVC.h; path = ../../SecretLog/BMLogVC.h; sourceTree = "<group>"; };
+		004A26EB174E73DD006BDB90 /* BMLogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMLogVC.m; path = ../../SecretLog/BMLogVC.m; sourceTree = "<group>"; };
+		004A26EC174E73DD006BDB90 /* BMLogVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BMLogVC.xib; path = ../../SecretLog/BMLogVC.xib; sourceTree = "<group>"; };
+		004A26ED174E73DD006BDB90 /* BMLogVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMLogVCDelegate.h; path = ../../SecretLog/BMLogVCDelegate.h; sourceTree = "<group>"; };
+		004A26F0174E73ED006BDB90 /* BMSecretLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMSecretLog.h; path = ../../SecretLog/BMSecretLog.h; sourceTree = "<group>"; };
+		004A26F1174E73ED006BDB90 /* BMSecretLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMSecretLog.m; path = ../../SecretLog/BMSecretLog.m; sourceTree = "<group>"; };
 		00A19B96174C67340042B4ED /* SecretLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A19B99174C67340042B4ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		00A19B9B174C67340042B4ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,11 +67,6 @@
 		00A19BC1174C67340042B4ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00A19BC3174C67340042B4ED /* SecretLogTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecretLogTests.h; sourceTree = "<group>"; };
 		00A19BC4174C67340042B4ED /* SecretLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecretLogTests.m; sourceTree = "<group>"; };
-		00A19BD0174C68020042B4ED /* LogVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogVC.h; path = SourceCode/LogVC.h; sourceTree = "<group>"; };
-		00A19BD1174C68020042B4ED /* LogVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogVC.m; path = SourceCode/LogVC.m; sourceTree = "<group>"; };
-		00A19BD2174C68020042B4ED /* LogVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LogVC.xib; path = SourceCode/LogVC.xib; sourceTree = "<group>"; };
-		00A19BD5174C7CB80042B4ED /* BMSecretLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BMSecretLog.h; path = SourceCode/BMSecretLog.h; sourceTree = "<group>"; };
-		00A19BD6174C7CB80042B4ED /* BMSecretLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BMSecretLog.m; path = SourceCode/BMSecretLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,9 @@
 			children = (
 				00A19BCE174C67F00042B4ED /* AppDelegate */,
 				00A19BCF174C67F70042B4ED /* LogVC */,
+				00A19BD8174C7CBF0042B4ED /* BMSecretLog */,
 				004A26E8174D864A006BDB90 /* DummyVC */,
 				00A19BA0174C67340042B4ED /* Supporting Files */,
-				00A19BD8174C7CBF0042B4ED /* BMSecretLog */,
 			);
 			path = SecretLog;
 			sourceTree = "<group>";
@@ -190,10 +190,10 @@
 		00A19BCF174C67F70042B4ED /* LogVC */ = {
 			isa = PBXGroup;
 			children = (
-				004A26E9174E6EE2006BDB90 /* LogVCDelegate.h */,
-				00A19BD0174C68020042B4ED /* LogVC.h */,
-				00A19BD1174C68020042B4ED /* LogVC.m */,
-				00A19BD2174C68020042B4ED /* LogVC.xib */,
+				004A26EA174E73DD006BDB90 /* BMLogVC.h */,
+				004A26EB174E73DD006BDB90 /* BMLogVC.m */,
+				004A26EC174E73DD006BDB90 /* BMLogVC.xib */,
+				004A26ED174E73DD006BDB90 /* BMLogVCDelegate.h */,
 			);
 			name = LogVC;
 			sourceTree = "<group>";
@@ -201,8 +201,8 @@
 		00A19BD8174C7CBF0042B4ED /* BMSecretLog */ = {
 			isa = PBXGroup;
 			children = (
-				00A19BD5174C7CB80042B4ED /* BMSecretLog.h */,
-				00A19BD6174C7CB80042B4ED /* BMSecretLog.m */,
+				004A26F0174E73ED006BDB90 /* BMSecretLog.h */,
+				004A26F1174E73ED006BDB90 /* BMSecretLog.m */,
 			);
 			name = BMSecretLog;
 			sourceTree = "<group>";
@@ -282,8 +282,8 @@
 				00A19BAC174C67340042B4ED /* Default.png in Resources */,
 				00A19BAE174C67340042B4ED /* Default@2x.png in Resources */,
 				00A19BB0174C67340042B4ED /* Default-568h@2x.png in Resources */,
-				00A19BD4174C68020042B4ED /* LogVC.xib in Resources */,
 				004A26E7174D8647006BDB90 /* DummyVC.xib in Resources */,
+				004A26EF174E73DD006BDB90 /* BMLogVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,9 +320,9 @@
 			files = (
 				00A19BA6174C67340042B4ED /* main.m in Sources */,
 				00A19BAA174C67340042B4ED /* AppDelegate.m in Sources */,
-				00A19BD3174C68020042B4ED /* LogVC.m in Sources */,
-				00A19BD7174C7CB80042B4ED /* BMSecretLog.m in Sources */,
 				004A26E6174D8647006BDB90 /* DummyVC.m in Sources */,
+				004A26EE174E73DD006BDB90 /* BMLogVC.m in Sources */,
+				004A26F2174E73ED006BDB90 /* BMSecretLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

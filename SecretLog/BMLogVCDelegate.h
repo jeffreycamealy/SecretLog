@@ -1,5 +1,5 @@
 //
-//  LogVCDelegate.h
+//  BMLogVCDelegate.h
 //  SecretLog
 //
 //  Created by Jeffrey Camealy on 5/23/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol LogVCDelegate <NSObject>
+@protocol BMLogVCDelegate <NSObject>
 
 - (void)logVCIsReadyToDismiss;
 
